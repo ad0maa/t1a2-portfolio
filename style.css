@@ -28,62 +28,103 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+  font-size: 18px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 header {
   background: #142426;
   color: #f2d6bd;
-  height: 70px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-header img {
-  height: 50px;
-  padding-left: 0.75rem;
-}
-
-header a {
+nav a {
   color: #f2d6bd;
   font-family: "Quicksand", sans;
-  padding: 1rem;
+  font-family: "Amatic SC", cursive;
+  font-size: 1.75rem;
+  padding-right: 2rem;
   text-decoration: none;
+  box-sizing: border-box;
+}
+
+nav a:hover {
+  box-sizing: border-box;
+  color: #8c8577;
+  text-decoration: underline;
+  font-size: 1.87em;
+}
+
+header img {
+  height: 50px;
+  margin: 12.5px;
+  display: block;
+}
+
+header img:hover {
+  height: 52px;
+  margin: 12.5px;
 }
 
 main {
   background: #2e5159;
   color: #f2d6bd;
   display: flex;
+  align-items: center;
   justify-content: center;
-  text-align: center;
+  flex: 1;
   padding: 2rem;
-  color: #f2d6bd;
-  font-family: "Quicksand", sans;
   font-family: "Amatic SC", cursive;
-  font-size: larger;
-  height: 100%;
+  width: 100%;
 }
 
-main h1, h2 {
-  font-family: sans-serif;
+main div {
+  text-align: center;
+}
+
+main h1 {
   font-weight: bold;
   font-family: "Amatic SC", cursive;
+  font-size: 4rem;
+}
+
+main h2 {
+  font-size: 2rem;
+}
+
+main p {
+  font-family: "Quicksand", sans-serif;
+  margin: 0.5em 0;
 }
 
 main a {
   color: #f2d6bd;
   font-family: "Quicksand", sans;
   border: 1px solid #f2d6bd;
+  border-radius: 5%;
+  display: inline-block;
   padding: 0.5rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   text-decoration: none;
+  font-size: 0.75rem;
 }
 
-main p {
-  margin-bottom: 1em;
+main a:hover {
+  background: #f2d6bd;
+  color: #142426;
 }
 
 .container {
-  height: 100%;
   padding: 2rem;
 }
 
@@ -91,11 +132,25 @@ footer {
   height: 70px;
   background: #142426;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.footer-cont {
+  display: flex;
+  align-items: center;
+}
+
+.footer-cont i {
+  padding: 0.5rem;
+  color: #f2d6bd;
 }
 
 footer h3 {
-  font-family: "Quicksand", sans;
+  font-family: "Amatic SC", cursive;
   color: #f2d6bd;
-  display: flex;
-  justify-content: flex-end;
+  padding: 1rem;
+  position: absolute;
+  right: 0;
 }/*# sourceMappingURL=style.css.map */
