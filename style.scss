@@ -1,0 +1,135 @@
+/* Import */
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Quicksand:wght@300;400;700&display=swap');
+
+/* Fonts*/
+// font-family: 'Amatic SC', cursive;
+// font-family: 'Bebas Neue', cursive;
+// font-family: 'Quicksand', sans-serif;
+
+
+/* Color Theme Swatches in Hex */
+.Afternoon-by-the-river-1-hex {
+    color: #2e5159;
+  }
+  .Afternoon-by-the-river-2-hex {
+    color: #142426;
+  }
+  .Afternoon-by-the-river-3-hex {
+    color: #8c8577;
+  }
+  .Afternoon-by-the-river-4-hex {
+    color: #d9bea7;
+  }
+  .Afternoon-by-the-river-5-hex {
+    color: #f2d6bd;
+  }
+
+
+// Global Settings
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//   Variable Declarations
+$primary-dark:#142426;
+$primary-light:#f2d6bd;
+
+
+@mixin heading-font {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-family: 'Amatic SC', cursive;
+  }
+
+@mixin light-font {
+    color: $primary-light;
+    font-family: 'Quicksand', sans;
+
+}
+
+
+// Header 
+header {
+    background:$primary-dark;
+    color:$primary-light;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    height: 50px;
+    padding-left: 0.75rem;
+}
+
+header a {
+    @include light-font();
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav {
+
+}
+
+
+// Main 
+
+main {
+    background: #2e5159;
+    color: $primary-light;
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    @include light-font;
+    font-family: 'Amatic SC', cursive;
+    font-size: larger;
+    height: 100%;
+}
+
+main h1, h2{ 
+    @include heading-font();
+    // font-size: 3rem;
+
+}
+
+main a {
+    @include light-font();
+    border: 1px solid #f2d6bd;
+    padding: 0.5rem;
+    margin-top: 2rem;
+    text-decoration: none;
+    // font-family: 'Amatic SC', cursive;
+    // color: $primary-light;
+
+}
+
+main p {
+    margin-bottom: 1em;
+}
+
+.container {
+    height: 100%;
+    padding: 2rem;
+}
+
+// Footer 
+
+footer {
+    height: 70px;
+    background: $primary-dark;
+    display: flex;
+}
+footer h3 {
+    font-family:'Quicksand', sans;;
+    color: $primary-light;
+    display: flex;
+    justify-content: flex-end;
+}
