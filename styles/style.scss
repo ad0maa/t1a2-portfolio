@@ -1,10 +1,11 @@
 /* Import */
-
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Quicksand:wght@300;400;700&display=swap');
+@import "variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Quicksand:wght@300;400;700&display=swap");
 
 /* Fonts*/
 // font-family: 'Amatic SC', cursive;
 // font-family: 'Bebas Neue', cursive;
+// font-family: 'Poppins', sans-serif;
 // font-family: 'Quicksand', sans-serif;
 
 
@@ -52,9 +53,6 @@ a {
 }
 
 //   Variable Declarations
-$primary-dark:#142426;
-$primary-light:#f2d6bd;
-$hover-dark:#8c8577;
 
 
 @mixin heading-font {
@@ -73,6 +71,8 @@ header {
     // height: 80px;
     font-family: 'Amatic SC', cursive;
     @include light-font();
+    position: sticky;
+    top: 0;
 }
 
 .navbar {
@@ -102,6 +102,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index:999;
 }
 
 .nav-item {
@@ -121,51 +122,48 @@ header {
 
 header img {
     height: 50px;
-    // margin: 12.5px;
     display: block;
 }
-
-// header img:hover {
-//     overflow: hidden;
-//     height: 55px;
-
-// }
 
 // Main 
 
 main {
     color: $primary-light;
     display: flex;
+    font-family: 'Amatic SC', cursive;
+    // width: 70%;
+    max-width: 1200px;
+
+}
+
+.ind-main {
     align-items: center;
     justify-content: center;
     flex: 1;
-    font-family: 'Amatic SC', cursive;
-     width: 70%;
-     max-width: 1200px;
-     margin: 0 auto;
-     border: 1px solid #f2d6bd
+    padding: 2rem;
+    //  border: 1px solid #f2d6bd
 }
 
-main div {
+.ind-main div {
     text-align: center;
 }
 
-main h1{ 
+.ind-main h1{ 
     @include heading-font();
     font-size: 4rem;
 }
 
-main h2 {
+.ind-main h2 {
     font-size: 2rem;
 }
 
-main p {
+.ind-main p {
     font-family: 'Quicksand', sans-serif;
     margin: 0.5em 0;
     // font-size: 1.5rem;
 }
 
-main a {
+.ind-main a {
     @include light-font();
     border: 1px solid #f2d6bd;
     border-radius: 5%;
@@ -176,37 +174,30 @@ main a {
     font-size: 00.75rem;
 }
 
-main a:hover{
+.ind-main a:hover{
     background: $primary-light;
     color: $primary-dark;
-}
-
-.container {
-    padding: 2rem;
 }
 
 // Footer 
 
 footer {
-    // height: auto;
     background: $primary-dark;
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: auto;
-    // justify-content: center;
-    // position: relative;
-}
+    padding: 1.5rem;
+    // overflow: auto;
+    // position:absolute;
+    // bottom: 0;
+    // width: 100%;
 
-// .footer-cont {
-//     // display: flex;
-//     // align-items: center;
-// }
+}
 
 .footer-cont i {
     padding: 0.5rem;
     color: $primary-light;
-    margin-top: 1rem;
+    // margin-top: 1rem;
 }
 
 .footer-cont i:hover {
@@ -225,17 +216,17 @@ footer h3 {
 // Media Queries
 @media screen and (min-width: 768px){
     
-    main {
+    .main-cont {
     padding: 2rem;
     }
     
     footer {
-    height: 70px;
+    // height: auto;
     align-items: center;
     justify-content: center;
 }
 .footer-cont i {
-    margin: 1rem 0 1rem 0;
+    display: inline-block;
 }
 
 footer h3 {
@@ -243,7 +234,6 @@ footer h3 {
     position: absolute;
     right: 0;
 }
-
 }
 
 @media only screen and (max-width: 768px) {
