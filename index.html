@@ -17,21 +17,40 @@
       src="https://kit.fontawesome.com/42e89015cc.js"
       crossorigin="anonymous"
     ></script>
-
   </head>
   <body>
     <!-- Header  -->
-    <header>
-      <a id="logo-head" href="index.html"
-        ><img src="/images/lightbg/android-chrome-512x512.png" alt="Adam Tunchay Logo"
-      /></a>
+    <header class="header">
       <!-- Nav -->
-      <nav>
-        <a href="./about.html">About</a>
-        <a href="./projects.html">Projects</a>
-        <a href="./blog-home.html">Blog</a>
-        <a href="./contact.html">Contact</a>
+      <nav class="navbar">
+        <a id="logo-head" class="nav-logo" href="index.html"
+          ><img
+            src="/images/lightbg/android-chrome-512x512.png"
+            alt="Adam Tunchay Logo"
+        /></a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./blog-home.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
+
+      <!-- Mobile Nav -->
+      <!-- <i id="hamburger-menu" class="fa-solid fa-bars"></i> -->
     </header>
     <!-- Main Section -->
     <main class="main-container">
@@ -48,11 +67,32 @@
     <!-- Footer -->
     <footer>
       <div class="footer-cont">
-        <i class="fa-brands fa-github fa-2xl"></i>
-        <i class="fa-brands fa-linkedin fa-2xl"></i>
-        <i class="fa-solid fa-envelope fa-2xl"></i>
+        <a href="https://github.com/ad0maa"><i class="fa-brands fa-github fa-2xl"></i></a>
+        <a href="https://www.linkedin.com/in/adam-tunchay/"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+        <a href="mailto:adam.tunchay@me.com"><i class="fa-solid fa-envelope fa-2xl"></i></a>
       </div>
       <h3>Adam Tunchay 2022&copy;</h3>
     </footer>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+
+      hamburger.addEventListener("click", mobileMenu);
+
+      function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      }
+
+      const navLink = document.querySelectorAll(".nav-link");
+
+      navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+      function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+      }
+    </script>
   </body>
 </html>
