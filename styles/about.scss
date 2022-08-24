@@ -11,8 +11,9 @@ h1 {
     // height: auto;
     margin: auto auto;
     display: flex;
-    padding: 2% 2%;
-    width: 90%;
+    padding: 5%;
+    max-width: 1080px;
+    // width: 90%;
     flex-wrap: wrap;
 }
 
@@ -46,7 +47,7 @@ h1 {
 // Slider Animation
 
 .slider-cont {
-    height:200px;
+    height:120px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,8 +57,8 @@ h1 {
 
 .slider {
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
     transform-style: preserve-3d;
     animation: rotate 30s linear infinite;
 }
@@ -119,7 +120,7 @@ h1 {
     text-align: left;
     font-size: 1rem;
     font-family: 'Quicksand', sans-serif;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .resume {
@@ -145,7 +146,6 @@ h1 {
     .about-container{
         flex-wrap: wrap;
         justify-content: space-between;
-
     }
 
 
@@ -157,5 +157,14 @@ h1 {
     .education, .resume {
         width: 48%;
         justify-content: space-between;
+    }
+
+    .slider-cont {
+        height:200px;
+    }
+    
+    .slider {
+        width: 100px;
+        height: 100px;
     }
 }

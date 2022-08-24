@@ -3,14 +3,12 @@
   margin: auto auto;
   display: flex;
   padding: 2% 2%;
-  width: 90%;
+  height: 800px;
   flex-wrap: wrap;
-  border: 1px solid salmon;
 }
 
 section {
   border-radius: 5px;
-  box-shadow: 5px 5px 10px black;
   color: #142426;
   background-color: #f2d6bd;
   position: relative;
@@ -19,41 +17,41 @@ section {
   align-items: center;
   width: 100%;
   height: 100%;
-  padding: 20px 100px;
+  padding: 30px;
 }
 
 h1 {
   font-size: 3rem;
+  padding-bottom: 2rem;
 }
 
 .contact-box {
-  max-width: 850px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  align-items: center;
   text-align: center;
-  box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+  max-width: 850px;
+  margin: 0 auto;
+  box-shadow: 5px 5px 10px black;
 }
 
 .field {
   width: 100%;
   padding: 0.5rem 1rem;
-  outline: none;
+  color: #142426;
   border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 5px;
   background-color: rgba(230, 230, 230, 0.6);
   font-size: 1.1rem;
   margin-bottom: 22px;
   transition: 0.3s;
+  outline: none;
 }
 
 .field:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  color: #8c8577;
 }
 
 .field:focus {
-  background-color: #fff;
-  border: 2px solid rgba(30, 85, 250, 0.47);
+  border: 2px solid #142426;
+  color: #8c8577;
 }
 
 .area {
@@ -64,10 +62,16 @@ h1 {
   width: 100%;
   padding: 0.5rem 1rem;
   font-size: 1.1rem;
-  background-color: #2ecc71;
+  background-color: #2e5159;
   cursor: pointer;
   outline: none;
   border: none;
-  color: #fff;
+  color: #f2d6bd;
   transition: 0.3s;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  color: #142426;
+  background-color: #8c8577;
 }/*# sourceMappingURL=contact.css.map */

@@ -3,69 +3,60 @@
 
 
 .contact-main {
-    // height: auto;
     margin: auto auto;
     display: flex;
     padding: 2% 2%;
-    width: 90%;
-    // height: 100%;
+    height: 800px;
     flex-wrap: wrap;
-    border: 1px solid salmon;
 }
 
 section {
     border-radius: 5px;
-    box-shadow: 5px 5px 10px black;
     color: $primary-dark;
     background-color: $primary-light;
-    // padding: 2% 0;
-    // text-align: center;
-    // height: 500px;
-    // width: 100%;
-    // // height: 100%;
-
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
-    padding: 20px 100px;
-
+    padding: 30px;
 }
 
 h1 {
     font-size: 3rem;
+    padding-bottom: 2rem;
 }
 
 .contact-box {
-    max-width: 850px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+    max-width: 850px;
+    margin: 0 auto;
+    box-shadow: 5px 5px 10px black;
 }
 
 .field {
     width: 100%;
     padding: 0.5rem 1rem;
-    outline: none;
+    color: $primary-dark;
     border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
     background-color: rgba(230,230,230,0.6);
     font-size: 1.1rem;
     margin-bottom: 22px;
     transition: 0.3s;
+    outline: none;
 }
 
 .field:hover{
-    background-color: rgba(0, 0, 0, 0.1);
+    // background-color: $hover-dark;
+    color: $hover-dark;
 }
 
 .field:focus {
-    background-color: #fff;
-    border: 2px solid rgba(30,85,250,0.47);
+    // background-color: $primary-mid;
+    border: 2px solid $primary-dark;
+    color: $hover-dark;
 }
 .area {
     min-height: 150px;
@@ -75,14 +66,16 @@ h1 {
     width: 100%;
     padding: 0.5rem 1rem;
     font-size: 1.1rem;
-    background-color: #2ecc71;
+    background-color:$primary-mid;
     cursor: pointer;
     outline: none;
     border: none;
-    color: #fff;
+    color: $primary-light;
     transition: 0.3s;
+    border-radius: 5px;
 }
 
 .btn:hover {
-
+    color: $primary-dark;
+    background-color: $hover-dark;
 }

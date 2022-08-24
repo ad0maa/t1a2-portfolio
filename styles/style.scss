@@ -122,6 +122,7 @@ header {
 .nav-link:hover{
     color: #8c8577;
     text-decoration: underline;
+    transition: 0.3s;
 }
 
 header img {
@@ -195,6 +196,7 @@ main {
 .ind-main a:hover{
     background: $primary-light;
     color: $primary-dark;
+    transition: 0.3s;
 }
 
 // Footer 
@@ -220,6 +222,7 @@ footer {
 
 .footer-cont i:hover {
     color: $hover-dark;
+    transition: 0.3s;
 }
 
 footer h3 {
