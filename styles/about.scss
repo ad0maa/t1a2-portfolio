@@ -1,22 +1,19 @@
 @import "variables.scss";   
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Poppins:wght@300;500;700&family=Quicksand:wght@300;400;700&display=swap');
 
-body {
-    // overflow: scroll;
-}
 
 h1 {
     font-weight: bold;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
 }
+
 .about-container {
-    height: auto;
-    margin: auto;
+    // height: auto;
+    margin: auto auto;
     display: flex;
-    flex-direction: column;
-    // flex-wrap: wrap;
     padding: 2% 2%;
-    // overflow-y: scroll;
+    width: 90%;
+    flex-wrap: wrap;
 }
 
 .wide-cont, .bot-cont {
@@ -27,20 +24,24 @@ h1 {
     background-color: $primary-light;
     padding: 2% 0;
     text-align: center;
+    width: 100%;
 }
 
 .wide-cont {
-    width: 100%;
     padding: 1em;
-    flex: 1;
- 
+}
+
+.wide-cont p {
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: normal;
+    text-align: center;
 }
 
 
 .languages img{
     width: 75px;
 }
-
 
 // Slider Animation
 
@@ -50,6 +51,7 @@ h1 {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    position: relative;
 }
 
 .slider {
@@ -101,39 +103,59 @@ h1 {
     transform: translateY(-20px) scale(1.2);
 }
 
-.bot-cont {
-    flex: 1;
-}
+// Bottom Styling
 
 
 .education {
-   height: 300px;
+   padding: 1em;
 }
 
 .education ul {
-    padding-left: 5%;
-    padding-top: 2%;
+    padding: 1rem;
 }
 
 .education li {
     list-style: circle;
     text-align: left;
-    font-size: 1.2rem;
-    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
     font-weight: 300;
 }
 
-.resume i{
-    display: inline-block;
-    padding: 5%;
-    color: $primary-dark;
-    font-size: 80px;
+.resume {
+    padding: 1rem;
+}
+.resume img{
+    width: 60px;
+    padding: 1rem 0;
 }
 
-.resume i:hover{
+.resume img:hover{
     color: #2e5159;
 }
 
 .resume h1{
     // padding-bottom: 10px;
+}
+
+// Media Queries
+
+@media screen and (min-width: 768px){
+
+    .about-container{
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
+
+    .wide-cont, .languages {
+        width: 100%;
+        
+    }
+    
+    .education, .resume {
+        width: 48%;
+        justify-content: space-between;
+    }
 }
