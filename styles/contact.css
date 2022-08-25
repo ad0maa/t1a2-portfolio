@@ -3,6 +3,7 @@
   margin: auto auto;
   display: flex;
   padding: 2% 2%;
+  width: auto;
   max-width: 1080px;
   flex-wrap: wrap;
 }
@@ -43,6 +44,7 @@ h1 {
   margin-bottom: 22px;
   transition: 0.3s;
   outline: none;
+  font-family: "Quicksand", sans-serif;
 }
 
 .field:hover {
