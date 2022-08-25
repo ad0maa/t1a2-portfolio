@@ -52,6 +52,13 @@ a {
     text-decoration: none;
 }
 
+a:visited{
+    color: inherit;
+}
+p {
+    @include p-font;
+}
+
 //   Variable Declarations
 
 
@@ -206,7 +213,7 @@ main {
 .ind-main p {
     font-family: 'Quicksand', sans-serif;
     margin: 0.5rem 0;
-    // font-size: 1.5rem;
+    color:$primary-light;
 }
 
 .ind-main a {

@@ -71,7 +71,11 @@ article p {
     article {
 
     }
-    #blog-1, #blog-2, #blog-3, #blog-4, #blog-5{
+    #blog-1 {
+        flex: 100%;
+    }
+    #blog-2, #blog-3, #blog-4, #blog-5{
         flex: 30%;
     }
+
 }

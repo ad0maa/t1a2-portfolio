@@ -47,6 +47,15 @@ a {
   text-decoration: none;
 }
 
+a:visited {
+  color: inherit;
+}
+
+p {
+  color: #142426;
+  font-family: "Quicksand", sans-serif;
+}
+
 header {
   background: #142426;
   font-family: "Amatic SC", cursive;
@@ -161,6 +170,7 @@ main {
 .ind-main p {
   font-family: "Quicksand", sans-serif;
   margin: 0.5rem 0;
+  color: #f2d6bd;
 }
 
 .ind-main a {
