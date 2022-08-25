@@ -10,4 +10,18 @@ $hover-dark:#8c8577;
     font-family: 'Quicksand', sans-serif;
 }
 
+@mixin heading-font {
+    font-weight: bold;
+    font-family: 'Amatic SC', cursive;
+  }
+
+@mixin light-font {
+    color: $primary-light;
+    font-family: 'Quicksand', sans;
+}
+
+//   Variable Declarations
+
+
+
 // Import

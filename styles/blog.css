@@ -21,7 +21,7 @@ article {
   box-shadow: 5px 5px 10px black;
 }
 
-article h2, h3, p {
+article h2, article h3, article p {
   align-self: flex-start;
 }
 
@@ -30,7 +30,8 @@ article h2, h3, p {
 }
 
 article img {
-  width: 275px;
+  width: 100%;
+  border-radius: 5px;
 }
 
 h1 {
@@ -57,6 +58,6 @@ article p {
     flex: 100%;
   }
   #blog-2, #blog-3, #blog-4, #blog-5 {
-    flex: 30%;
+    flex: 45%;
   }
 }/*# sourceMappingURL=blog.css.map */
