@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Poppins:wght@300;500;700&family=Quicksand:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Quicksand:wght@300;400;700&display=swap");
 .wrapper {
   max-width: 1080px;
   width: 100%;
@@ -6,19 +6,23 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  padding: 1rem;
 }
 
 article {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
   margin: 1rem;
-  padding: 1rem;
+  padding: 1.5rem;
   color: #142426;
   background-color: #f2d6bd;
   border-radius: 5px;
   box-shadow: 5px 5px 10px black;
+}
+
+article h2, h3, p {
+  align-self: flex-start;
 }
 
 .art-heading {
@@ -42,15 +46,14 @@ h2 {
 
 article p {
   font-family: "Quicksand", sans-serif;
-  padding: 1em 1em;
+  padding: 1em 0;
 }
 
 @media screen and (min-width: 768px) {
   .wrapper {
     margin: auto;
   }
-  #project-1, #project-2, #project-3 {
+  #blog-1, #blog-2, #blog-3, #blog-4, #blog-5 {
     flex: 30%;
-    height: 500px;
   }
-}/*# sourceMappingURL=projects.css.map */
+}/*# sourceMappingURL=blog.css.map */

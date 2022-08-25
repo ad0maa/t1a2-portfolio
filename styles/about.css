@@ -5,20 +5,19 @@ h1 {
 }
 
 .about-container {
-  margin: auto auto;
-  display: flex;
-  padding: 5%;
   max-width: 1080px;
+  margin: auto;
+  display: flex;
   flex-wrap: wrap;
 }
 
 .wide-cont, .bot-cont {
-  margin: 2% 0;
+  margin: 1rem;
   border-radius: 5px;
   box-shadow: 5px 5px 10px black;
   color: #142426;
   background-color: #f2d6bd;
-  padding: 2% 0;
+  padding: 1rem;
   text-align: center;
   width: 100%;
 }
@@ -124,13 +123,20 @@ h1 {
   padding: 1rem;
 }
 
-.resume img {
-  width: 60px;
+.resume i {
+  font-size: 5rem;
   padding: 1rem 0;
+  color: #2e5159;
+  transition: 0.3s;
 }
 
-.resume img:hover {
-  color: #2e5159;
+.resume i:hover {
+  color: #8c8577;
+  cursor: pointer;
+}
+
+.resume p {
+  font-family: "Quicksand", sans-serif;
 }
 
 @media screen and (min-width: 768px) {
@@ -142,8 +148,8 @@ h1 {
     width: 100%;
   }
   .education, .resume {
-    width: 48%;
-    justify-content: space-between;
+    flex: 45%;
+    justify-content: space-evenly;
   }
   .slider-cont {
     height: 200px;

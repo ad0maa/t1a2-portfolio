@@ -6,7 +6,8 @@
     margin: auto auto;
     display: flex;
     padding: 2% 2%;
-    height: 800px;
+
+    max-width: 1080px;
     flex-wrap: wrap;
     
 }
@@ -61,6 +62,7 @@ h1 {
 }
 .area {
     min-height: 150px;
+    max-width: 790px;
 }
 
 .btn {

@@ -8,20 +8,20 @@ h1 {
 }
 
 .about-container {
-    margin: auto auto;
-    display: flex;
-    padding: 5%;
     max-width: 1080px;
+    margin: auto;
+    // padding: 5%;
+    display: flex;
     flex-wrap: wrap;
 }
 
 .wide-cont, .bot-cont {
-    margin: 2% 0;
+    margin: 1rem;
     border-radius: 5px;
     box-shadow: 5px 5px 10px black;
     color: $primary-dark;
     background-color: $primary-light;
-    padding: 2% 0;
+    padding: 1rem;
     text-align: center;
     width: 100%;
 }
@@ -123,18 +123,23 @@ h1 {
 
 .resume {
     padding: 1rem;
+
 }
-.resume img{
-    width: 60px;
+
+.resume i {
+    font-size: 5rem;
     padding: 1rem 0;
+    color: $primary-mid;
+    transition: 0.3s;
 }
 
-.resume img:hover{
-    color: #2e5159;
+.resume i:hover{
+    color: $hover-dark;
+    cursor: pointer;
 }
 
-.resume h1{
-    // padding-bottom: 10px;
+.resume p {
+    font-family: 'Quicksand', sans-serif;
 }
 
 // Media Queries
@@ -153,8 +158,8 @@ h1 {
     }
     
     .education, .resume {
-        width: 48%;
-        justify-content: space-between;
+        flex: 45%;
+        justify-content:space-evenly;
     }
 
     .slider-cont {
