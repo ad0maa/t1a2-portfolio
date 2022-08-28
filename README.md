@@ -10,7 +10,7 @@
 
 ---
 
-### [Live Website]()
+### [Live Website](https://adam-tunchay-t1a2.netlify.app/index.html)
 ### [GitHub Repository](https://github.com/ad0maa/t1a2-portfolio)
 ### [Video Presentation](https://www.youtube.com/watch?v=zR_QQ_zMPFQ)
 
@@ -132,7 +132,8 @@ This website was designed as a professional personal website to advertise my exp
 <img align="center" width="100%" src="./docs/home/../contact-desk.png">
 <img align="center" width="45%" src="./docs/home/../contact-tab.png"><img align="center" width="45%" src="./docs/home/../contact-ph.png">
 </p>
-----
+
+---
 
 ## Tech Stack
 
