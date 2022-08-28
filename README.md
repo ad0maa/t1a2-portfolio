@@ -98,31 +98,31 @@ This website was designed as a professional personal website to advertise my exp
 
 ### Home
 <img align="center" width="100%" src="./docs/home/../home-desk.png">
-<img align="center" width="50%" src="./docs/home/../home-tab.png"><img align="center" width="50%" src="./docs/home/../home-ph.png">
+<img align="center" width="45%" src="./docs/home/../home-tab.png"><img align="center" width="45%" src="./docs/home/../home-ph.png">
 
 ### About
 <img align="center" width="100%" src="./docs/home/../about-desk.png">
-<img align="center" width="50%" src="./docs/home/../about-tab.png"><img align="center" width="50%" src="./docs/home/../about-ph.png">
+<img align="center" width="45%" src="./docs/home/../about-tab.png"><img align="center" width="45%" src="./docs/home/../about-ph.png">
 
 ### Projects
 
 <img align="center" width="100%" src="./docs/home/../projects-desk.png">
-<img align="center" width="50%" src="./docs/home/../projects-tab.png"><img align="center" width="50%" src="./docs/home/../projects-ph.png">
+<img align="center" width="45%" src="./docs/home/../projects-tab.png"><img align="center" width="45%" src="./docs/home/../projects-ph.png">
 
 ### Blog Home
 
 <img align="center" width="100%" src="./docs/home/../blog-home-desk.png">
-<img align="center" width="50%" src="./docs/home/../blog-home-tab.png"><img align="center" width="50%" src="./docs/home/../blog-home-ph.png">
+<img align="center" width="45%" src="./docs/home/../blog-home-tab.png"><img align="center" width="45%" src="./docs/home/../blog-home-ph.png">
 
 ### Blogs
 
 <img align="center" width="100%" src="./docs/home/../blogs-desk.png">
-<img align="center" width="50%" src="./docs/home/../blogs-tab.png"><img align="center" width="50%" src="./docs/home/../blogs-ph.png">
+<img align="center" width="45%" src="./docs/home/../blogs-tab.png"><img align="center" width="45%" src="./docs/home/../blogs-ph.png">
 
 ### Contact
 
 <img align="center" width="100%" src="./docs/home/../contact-desk.png">
-<img align="center" width="50%" src="./docs/home/../contact-tab.png"><img align="center" width="50%" src="./docs/home/../contact-ph.png">
+<img align="center" width="45%" src="./docs/home/../contact-tab.png"><img align="center" width="45%" src="./docs/home/../contact-ph.png">
 
 ----
 
