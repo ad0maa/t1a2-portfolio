@@ -3,3 +3,6 @@
 
 #Ignore Non Deliverables
 non-delivery/
+
+#Ignore .vscode
+*.vscode
