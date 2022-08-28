@@ -1,5 +1,6 @@
 @import "variables.scss"; 
 
+// Contact Box 
 .contact-main {
     margin: auto auto;
     display: flex;
@@ -7,9 +8,7 @@
     width: auto;
     max-width: 1080px;
     flex-wrap: wrap;
-
 }
-
 section {
     border-radius: 5px;
     color: $primary-dark;
@@ -50,12 +49,10 @@ h1 {
 }
 
 .field:hover{
-    // background-color: $hover-dark;
     color: $hover-dark;
 }
 
 .field:focus {
-    // background-color: $primary-mid;
     border: 2px solid $primary-dark;
     color: $hover-dark;
 }
@@ -63,7 +60,7 @@ h1 {
     min-height: 150px;
     max-width: 790px;
 }
-
+// Button Styling 
 .btn {
     width: 100%;
     padding: 0.5rem 1rem;

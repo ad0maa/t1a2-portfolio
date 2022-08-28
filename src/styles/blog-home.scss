@@ -5,9 +5,7 @@
 .wrapper {
     max-width: 1080px;
     width: 100%;
-    // padding: 5%;
     display: flex;
-    // flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -20,14 +18,12 @@ article {
     display: flex;
     flex-direction: column;
     align-items: center;
-    // flex-wrap: wrap;
     margin: 1rem;
     padding: 1.5rem;
     color: $primary-dark;
     background-color: $primary-light;
     border-radius: 5px;
     box-shadow: 5px 5px 10px black;
-    // width: 100%;
 }
 
 article h2, article h3, article p {
@@ -40,11 +36,9 @@ article h2, article h3, article p {
 
 
 article img {
-    // height: 250px;
     width: 100%;
     border-radius: 5px;
 }
-
 
 // Typography 
 h1 {

@@ -1,3 +1,25 @@
+/* Color Theme Swatches in Hex */
+.Afternoon-by-the-river-1-hex {
+  color: #2e5159;
+}
+
+.Afternoon-by-the-river-2-hex {
+  color: #142426;
+}
+
+.Afternoon-by-the-river-3-hex {
+  color: #8c8577;
+}
+
+.Afternoon-by-the-river-4-hex {
+  color: #d9bea7;
+}
+
+.Afternoon-by-the-river-5-hex {
+  color: #f2d6bd;
+}
+
+/* Fonts*/
 h2 {
   font-weight: bold;
   font-size: 3rem;
@@ -25,12 +47,12 @@ h2 {
 .wide-cont {
   padding: 1em;
 }
-
 .wide-cont p {
   font-size: 1rem;
   font-family: "Quicksand", sans-serif;
   font-weight: normal;
-  text-align: center;
+  text-align: left;
+  padding: 1rem;
 }
 
 .languages img {
@@ -146,6 +168,9 @@ h2 {
   }
   .wide-cont, .languages {
     width: 100%;
+  }
+  .wide-cont p {
+    padding: 1rem 2rem;
   }
   .education, .resume {
     flex: 45%;

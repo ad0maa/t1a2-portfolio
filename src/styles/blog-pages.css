@@ -1,3 +1,25 @@
+/* Color Theme Swatches in Hex */
+.Afternoon-by-the-river-1-hex {
+  color: #2e5159;
+}
+
+.Afternoon-by-the-river-2-hex {
+  color: #142426;
+}
+
+.Afternoon-by-the-river-3-hex {
+  color: #8c8577;
+}
+
+.Afternoon-by-the-river-4-hex {
+  color: #d9bea7;
+}
+
+.Afternoon-by-the-river-5-hex {
+  color: #f2d6bd;
+}
+
+/* Fonts*/
 .wrapper {
   max-width: 1080px;
   margin: auto;
@@ -9,28 +31,29 @@ section {
   color: #142426;
   box-shadow: 5px 5px 10px black;
   border-radius: 5px;
-  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
   padding: 30px;
+}
+section p, section h3 {
+  margin-bottom: 1rem;
+}
+section h1 {
+  font-size: 3rem;
 }
 
 section img {
   width: 100%;
   border-radius: 5px;
   margin-bottom: 1rem;
+  max-width: 800px;
 }
 
 section h1, section h2, section h3 {
   align-self: flex-start;
-}
-
-section p {
-  margin-bottom: 1rem;
 }
 
 .buttons-div {
@@ -48,18 +71,10 @@ section p {
   transition: 0.3s;
   padding: 0.75rem;
   margin: 1rem;
-  font-size: 1rem;
+  text-align: center;
 }
 
 .button:hover {
   background: #2e5159;
   color: #f2d6bd;
-}
-
-h3 {
-  margin-bottom: 1rem;
-}
-
-h1 {
-  font-size: 3rem;
 }/*# sourceMappingURL=blog-pages.css.map */

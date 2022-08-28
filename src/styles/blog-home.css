@@ -1,3 +1,25 @@
+/* Color Theme Swatches in Hex */
+.Afternoon-by-the-river-1-hex {
+  color: #2e5159;
+}
+
+.Afternoon-by-the-river-2-hex {
+  color: #142426;
+}
+
+.Afternoon-by-the-river-3-hex {
+  color: #8c8577;
+}
+
+.Afternoon-by-the-river-4-hex {
+  color: #d9bea7;
+}
+
+.Afternoon-by-the-river-5-hex {
+  color: #f2d6bd;
+}
+
+/* Fonts*/
 .wrapper {
   max-width: 1080px;
   width: 100%;

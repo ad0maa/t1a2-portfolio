@@ -26,15 +26,14 @@ h2 {
 
 .wide-cont {
     padding: 1em;
+    p {
+        font-size: 1rem;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: normal;
+        text-align: left;
+        padding: 1rem;
+    }
 }
-
-.wide-cont p {
-    font-size: 1rem;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: normal;
-    text-align: center;
-}
-
 
 .languages img{
     width: 75px;
@@ -93,7 +92,6 @@ h2 {
     border: 100px;
     object-fit: cover;
     transition: 2s;
-    // box-shadow: 15px 15px 15px black;
 }
 
 .slider span img:hover {
@@ -101,8 +99,6 @@ h2 {
 }
 
 // Bottom Styling
-
-
 .education {
    padding: 1em;
 }
@@ -141,7 +137,6 @@ h2 {
 }
 
 // Media Queries
-
 @media screen and (min-width: 768px){
 
     .about-container{
@@ -152,7 +147,10 @@ h2 {
 
     .wide-cont, .languages {
         width: 100%;
-        
+    }
+
+    .wide-cont p {
+        padding: 1rem 2rem;
     }
     
     .education, .resume {

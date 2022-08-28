@@ -2,33 +2,9 @@
 @import "variables.scss";
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Quicksand:wght@300;400;700&display=swap");
 
-/* Fonts*/
-// font-family: 'Amatic SC', cursive;
-// font-family: 'Bebas Neue', cursive;
-// font-family: 'Poppins', sans-serif;
-// font-family: 'Quicksand', sans-serif;
-
-
-/* Color Theme Swatches in Hex */
-.Afternoon-by-the-river-1-hex {
-    color: #2e5159;
-  }
-  .Afternoon-by-the-river-2-hex {
-    color: #142426;
-  }
-  .Afternoon-by-the-river-3-hex {
-    color: #8c8577;
-  }
-  .Afternoon-by-the-river-4-hex {
-    color: #d9bea7;
-  }
-  .Afternoon-by-the-river-5-hex {
-    color: #f2d6bd;
-  }
 
 
 // Global Settings
-
 * {
     margin: 0;
     padding: 0;
@@ -40,21 +16,23 @@ html {
 }
 
 body {
+    height: 100%;
     display: flex;
     flex-direction: column;
-    height: 100%;
-    background: #2e5159;
+    background: $primary-mid;
 }
 
 main {
-    color: $primary-light;
     display: flex;
+    color: $primary-light;
     font-family: 'Amatic SC', cursive;
+    color: $primary-dark;
 }
-
-li {
+li 
+{
     list-style: none;
 }
+
 a {
     text-decoration: none;
 }
@@ -69,7 +47,6 @@ p {
 // Header 
 header {
     background:$primary-dark;
-    // height: 80px;
     font-family: 'Amatic SC', cursive;
     @include light-font();
     position:sticky;
@@ -77,19 +54,18 @@ header {
     top: 0;
 }
 
+// Nav Bar
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1rem;
     font-family: 'Amatic SC', cursive;
-    
 }
 
 .hamburger {
     display: none;
     margin-right: 1rem;
-    
 }
 
 .bar {
@@ -101,7 +77,6 @@ header {
     transition: all 0.3s ease-in-out;
     background-color: $primary-light;
     border-radius: 5px;
-    
 }
 
 .nav-menu {
@@ -132,74 +107,45 @@ header img {
     display: block;
 }
 
-
 // Background Image
 .bg-image img {
-    position: absolute;
+    min-height: 100%;
+    height: auto;
+    position:fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    opacity: 0.1;
-    // object-fit:cover;
+    opacity: 0.15;
     z-index: -1;
-    // animation:spin 360s linear infinite;
-    // overflow: hidden;
-    // filter: blur(1px);
 }
 
-@keyframes spin { 100% { transform:rotate(360deg); } }
-
 // Footer 
-
 footer {
     background: $primary-dark;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1.5rem;
-    // overflow: auto;
-    // position:absolute;
-    bottom: 0;
-    width: 100%;
-
-}
-
-.footer-cont i {
-    padding: 0.5rem;
-    color: $primary-light;
-    // margin-top: 1rem;
-}
-
-.footer-cont i:hover {
-    color: $hover-dark;
-    transition: 0.3s;
-}
-
-footer h3 {
-    font-family: 'Amatic SC', cursive;
-    color: $primary-light;
-    padding: 1rem 0 0.5rem 0;
-    // position: absolute;
-    // right: 0;
+    justify-content: center;
+    padding: 1rem;
+    i {
+        padding: 0.5rem 0;
+        color: $primary-light;
+        margin: 0.75rem;
+    }
+    i:hover {
+        color: $hover-dark;
+        transition: 0.3s;
+    }
+    h3 {
+        font-family: 'Amatic SC', cursive;
+        color: $primary-light;
+        margin: 0.5rem;
+    }
 }
 
 
 // Media Queries
 @media screen and (min-width: 768px){
-    .main-cont {
-    padding: 2rem;
-    }
-    
-    footer {
-    // height: auto;
-    align-items: center;
-    justify-content: center;
-}
-.footer-cont i {
-    display: inline-block;
-}
-
 footer h3 {
     padding: 1rem;
     position: absolute;
@@ -218,10 +164,8 @@ footer h3 {
         border-radius: 10px;
         text-align: center;
         transition: 0.3s;
-        box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
+        box-shadow:0 10px 27px rgba(0, 0, 0, 0.05);      
     }
-
     .nav-menu.active {
         left: 0;
     }
@@ -246,5 +190,4 @@ footer h3 {
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
-
 }

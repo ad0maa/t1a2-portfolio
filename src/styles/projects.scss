@@ -9,7 +9,6 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-
 }
 
 // Article Styling 
@@ -17,15 +16,12 @@ article {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
     margin: 1rem ;
     padding: 1rem;
     color: $primary-dark;
     background-color: $primary-light;
     border-radius: 5px;
     box-shadow: 5px 5px 10px black;
-    // width: 100%;
 }
 
 .art-heading{
@@ -33,7 +29,7 @@ article {
 }
 
 article img {
-    width: 275px;
+    width: 100%;
     border-radius: 5px;
     border:2px #2e5159 solid;
     box-shadow: 2px 2px 7px black;
@@ -53,7 +49,7 @@ h2 {
 
 article p {
     font-family: 'Quicksand', sans-serif;
-    padding: 1em 1em;
+    padding: 0.75em;
 }
 
 
@@ -61,12 +57,12 @@ article p {
     .wrapper {
         margin: auto;
     }
-
-    article {
-
-    }
     #project-1, #project-2, #project-3 {
         flex: 30%;
         height: 500px;
+    }
+
+    article img{
+        max-width: 500px;
     }
 }
