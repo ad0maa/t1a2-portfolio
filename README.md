@@ -17,7 +17,7 @@
 ---
 
 ## Purpose & Target Audience
-This website was designed as a professional personal website to advertise my experience and skills in web development to potential employees, upon completion of studying. It utilizes technologies that I would will be working with once hired. As I complete more projects throughout this course and in my own time they will  be added to the portfolio section.
+This website was designed as a professional personal website to advertise my experience and skills in web development to potential employees, upon completion of studying. It utilizes technologies that I would will be working with once hired. As I complete more projects throughout this course and in my own time they will  be added to the projects section.
 
 ### The website provides the viewer with -   
 - Contact Information
