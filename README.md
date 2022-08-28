@@ -97,33 +97,41 @@ This website was designed as a professional personal website to advertise my exp
 ## Screenshots
 
 ### Home
+<p align="center">
 <img align="center" width="100%" src="./docs/home/../home-desk.png">
 <img align="center" width="45%" src="./docs/home/../home-tab.png"><img align="center" width="45%" src="./docs/home/../home-ph.png">
+</p>
+
 
 ### About
+<p align="center">
 <img align="center" width="100%" src="./docs/home/../about-desk.png">
 <img align="center" width="45%" src="./docs/home/../about-tab.png"><img align="center" width="45%" src="./docs/home/../about-ph.png">
+</p>
 
 ### Projects
-
+<p align="center">
 <img align="center" width="100%" src="./docs/home/../projects-desk.png">
 <img align="center" width="45%" src="./docs/home/../projects-tab.png"><img align="center" width="45%" src="./docs/home/../projects-ph.png">
+</p>
 
 ### Blog Home
-
+<p align="center">
 <img align="center" width="100%" src="./docs/home/../blog-home-desk.png">
 <img align="center" width="45%" src="./docs/home/../blog-home-tab.png"><img align="center" width="45%" src="./docs/home/../blog-home-ph.png">
+</p>
 
 ### Blogs
-
+<p align="center">
 <img align="center" width="100%" src="./docs/home/../blogs-desk.png">
 <img align="center" width="45%" src="./docs/home/../blogs-tab.png"><img align="center" width="45%" src="./docs/home/../blogs-ph.png">
+</p>
 
 ### Contact
-
+<p align="center">
 <img align="center" width="100%" src="./docs/home/../contact-desk.png">
 <img align="center" width="45%" src="./docs/home/../contact-tab.png"><img align="center" width="45%" src="./docs/home/../contact-ph.png">
-
+</p>
 ----
 
 ## Tech Stack
