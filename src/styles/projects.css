@@ -1,0 +1,60 @@
+.wrapper {
+  max-width: 1080px;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem;
+  padding: 1rem;
+  color: #142426;
+  background-color: #f2d6bd;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px black;
+}
+
+.art-heading {
+  flex: 100%;
+}
+
+article img {
+  width: 275px;
+  border-radius: 5px;
+  border: 2px #2e5159 solid;
+  box-shadow: 2px 2px 7px black;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-top: 1rem;
+}
+
+article p {
+  font-family: "Quicksand", sans-serif;
+  padding: 1em 1em;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    margin: auto;
+  }
+  #project-1, #project-2, #project-3 {
+    flex: 30%;
+    height: 500px;
+  }
+}/*# sourceMappingURL=projects.css.map */

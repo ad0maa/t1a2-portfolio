@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title & Icon -->
+    <title>Adam Tunchay - Blog</title>
+    <link rel="shortcut icon" href="/title-icon.png" type="image/x-icon" />
+    <!-- Import and Linking -->
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/blog-home.css" />
+    <script
+      src="https://kit.fontawesome.com/42e89015cc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header  -->
+    <header class="header">
+      <!-- Nav -->
+      <nav class="navbar">
+        <a id="logo-head" class="nav-logo" href="/index.html"
+          ><img
+            src="/images/lightbg/android-chrome-512x512.png"
+            alt="Adam Tunchay Logo"
+        /></a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/blog-home.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/contact.html">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+
+      <!-- Mobile Nav -->
+      <!-- <i id="hamburger-menu" class="fa-solid fa-bars"></i> -->
+    </header>
+
+    <!-- <div class="bg-image">
+      <img src="/images/stars-bg.jpeg" alt="" />
+    </div> -->
+    <!-- Main Section -->
+    <main class="wrapper">
+      <article class="art-heading">
+        <h1>Blogs</h1>
+      </article>
+      <article id="blog-1">
+        <a href="blog1.html"
+          ><img src="/images/blogs/code-photo.jpeg" alt="Image of Blog One"
+        /></a>
+        <h2>Blog One</h2>
+        <h3>1st August 2022</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum velit
+          quos accusamus voluptates impedit architecto, eveniet repudiandae odit
+          placeat, sunt rerum ducimus. Corrupti molestias accusamus, quod nulla
+          ipsam nobis veritatis?
+        </p>
+      </article>
+      <article id="blog-2">
+        <a href="blog2.html"
+          ><img src="/images/blogs/meeting.jpeg" alt="Image of Blog Two"
+        /></a>
+        <h2>Blog Two</h2>
+        <h3>3rd August 2022</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum velit
+          quos accusamus voluptates impedit architecto, eveniet repudiandae odit
+          placeat, sunt rerum ducimus. Corrupti molestias accusamus, quod nulla
+          ipsam nobis veritatis?
+        </p>
+      </article>
+      <article id="blog-3">
+        <a href="blog3.html"
+          ><img src="/images/blogs/desk-setup.jpeg" alt="Image of Blog Three"
+        /></a>
+        <h2>Blog Three</h2>
+        <h3>11th August 2022</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum velit
+          quos accusamus voluptates impedit architecto, eveniet repudiandae odit
+          placeat, sunt rerum ducimus. Corrupti molestias accusamus, quod nulla
+          ipsam nobis veritatis?
+        </p>
+      </article>
+      <article id="blog-4">
+        <a href="blog4.html"
+          ><img src="/images/blogs/social-media.jpeg" alt="Image of Blog Four"
+        /></a>
+        <h2>Blog Four</h2>
+        <h3>18th August 2022</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum velit
+          quos accusamus voluptates impedit architecto, eveniet repudiandae odit
+          placeat, sunt rerum ducimus. Corrupti molestias accusamus, quod nulla
+          ipsam nobis veritatis?
+        </p>
+      </article>
+      <article id="blog-5">
+        <a href="blog5.html"
+          ><img src="/images/blogs/team-work.jpeg" alt="Image of Blog Five"
+        /></a>
+        <h2>Blog Five</h2>
+        <h3>24th August 2022</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum velit
+          quos accusamus voluptates impedit architecto, eveniet repudiandae odit
+          placeat, sunt rerum ducimus. Corrupti molestias accusamus, quod nulla
+          ipsam nobis veritatis?
+        </p>
+      </article>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-cont">
+        <a href="https://github.com/ad0maa"
+          ><i class="fa-brands fa-github fa-2xl"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/adam-tunchay/"
+          ><i class="fa-brands fa-linkedin fa-2xl"></i
+        ></a>
+        <a href="mailto:adam.tunchay@me.com"
+          ><i class="fa-solid fa-envelope fa-2xl"></i
+        ></a>
+      </div>
+      <h3>Adam Tunchay 2022&copy;</h3>
+    </footer>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+
+      hamburger.addEventListener("click", mobileMenu);
+
+      function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      }
+
+      const navLink = document.querySelectorAll(".nav-link");
+
+      navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+      function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+      }
+    </script>
+  </body>
+</html>

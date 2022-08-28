@@ -1,0 +1,48 @@
+@import "variables.scss"; 
+
+
+// Main 
+.ind-main {
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 2rem;
+    //  border: 1px solid #f2d6bd
+    text-shadow: 2px 2px 5px rgba($color: #000000, $alpha: 1.0);
+}
+
+.ind-main div {
+    text-align: center;
+}
+
+.ind-main h1{ 
+    font-size: 4.5rem;
+}
+
+.ind-main h2 {
+    font-size: 2rem;
+}
+
+.ind-main p {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0.5rem 0;
+    color:$primary-light;
+}
+
+.ind-main a {
+    @include light-font();
+    border: 1px solid #f2d6bd;
+    border-radius: 5%;
+    display: inline-block;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    text-shadow: none;
+}
+
+.ind-main a:hover{
+    background: $primary-light;
+    color: $primary-dark;
+    transition: 0.3s;
+}

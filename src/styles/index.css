@@ -1,0 +1,44 @@
+.ind-main {
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 2rem;
+  text-shadow: 2px 2px 5px black;
+}
+
+.ind-main div {
+  text-align: center;
+}
+
+.ind-main h1 {
+  font-size: 4.5rem;
+}
+
+.ind-main h2 {
+  font-size: 2rem;
+}
+
+.ind-main p {
+  font-family: "Quicksand", sans-serif;
+  margin: 0.5rem 0;
+  color: #f2d6bd;
+}
+
+.ind-main a {
+  color: #f2d6bd;
+  font-family: "Quicksand", sans;
+  border: 1px solid #f2d6bd;
+  border-radius: 5%;
+  display: inline-block;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  font-size: 1rem;
+  text-shadow: none;
+}
+
+.ind-main a:hover {
+  background: #f2d6bd;
+  color: #142426;
+  transition: 0.3s;
+}/*# sourceMappingURL=index.css.map */

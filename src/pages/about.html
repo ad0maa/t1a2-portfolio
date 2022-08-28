@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title & Icon -->
+    <title>Adam Tunchay - About</title>
+    <link
+    rel="shortcut icon"
+    href="/title-icon.png"
+    type="image/x-icon"
+  />
+    <!-- Import and Linking -->
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/about.css" />
+    <script
+      src="https://kit.fontawesome.com/42e89015cc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header  -->
+    <header class="header">
+      <!-- Nav -->
+      <nav class="navbar">
+        <a id="logo-head" class="nav-logo" href="/index.html"
+          ><img
+            src="/images/lightbg/android-chrome-512x512.png"
+            alt="Adam Tunchay Logo"
+        /></a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/blog-home.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/contact.html">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+
+      <!-- Mobile Nav -->
+      <!-- <i id="hamburger-menu" class="fa-solid fa-bars"></i> -->
+    </header>
+    <!-- Main Section -->
+    <main class="about-container">
+      <div class="bg-image">
+        <img src="/images/stars-bg.jpeg" alt="" />
+      </div>
+      <div class="wide-cont">
+        <h2>A Little About Me</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+          aspernatur praesentium labore nam aperiam repellat pariatur, at
+          accusantium veritatis similique possimus dolores beatae nostrum fuga
+          non commodi totam exercitationem sunt.
+        </p>
+      </div>
+      <div class="languages bot-cont">
+        <h2>Languages I'm Learning</h1>
+        <!-- Slider Animation -->
+        <div class="slider-cont">
+          <div class="slider">
+            <span style="--i: 1"
+              ><img
+                src="/images/carousel/html5-brands.svg"
+                class="filter-svg shadow-svg"
+                alt=""
+            /></span>
+            <span style="--i: 2"
+              ><img
+                src="/images/carousel/css3-alt-brands.svg"
+                class="filter-svg shadow-svg"
+                alt=""
+            /></span>
+            <span style="--i: 3"
+              ><img
+                src="/images/carousel/square-js-brands.svg"
+                class="filter-svg shadow-svg"
+                alt=""
+            /></span>
+            <span style="--i: 4"
+              ><img
+                src="/images/carousel/python-brands.svg"
+                class="filter-svg shadow-svg"
+                alt=""
+            /></span>
+            <span style="--i: 5"
+              ><img
+                src="/images/carousel/react-brands.svg"
+                class="filter-svg shadow-svg"
+                alt=""
+            /></span>
+            <span style="--i: 6"
+              ><img
+                src="/images/carousel/node-brands.svg"
+                class="filter-svg shadow-svg"
+                alt=""
+            /></span>
+            <span style="--i: 7"
+              ><img
+                src="/images/carousel/angular-brands.svg"
+                class="filter-svg shadow-svg"
+                alt=""
+            /></span>
+            <span style="--i: 8"
+              ><img
+                src="/images/carousel/square-git-brands.svg"
+                class="filter-svg shadow-svg"
+                alt=""
+            /></span>
+          </div>
+        </div>
+      </div>
+      <div class="education bot-cont">
+        <h2>Education</h1>
+        <ul>
+          <li>
+            <strong> Academy - Diploma of Information Technology</strong> <br>Web Development Bootcamp <br /><em>2022 - In Progress</em>
+          </li>
+          <br>
+          <li>
+          <strong>Deakin University</strong> <br> Bachelor of Information Technology<br /><em>2022 -
+            Currently Deferred</em>
+          </li>
+        </ul>
+      </div>
+      <div class="resume bot-cont">
+        <h2>Resume</h1>
+        <a href="/docs/resume.pdf"><i class="fa-solid fa-file-pdf"></i></a>
+        <p>Click to download Resume</p>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-cont">
+        <a href="https://github.com/ad0maa"
+          ><i class="fa-brands fa-github fa-2xl"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/adam-tunchay/"
+          ><i class="fa-brands fa-linkedin fa-2xl"></i
+        ></a>
+        <a href="mailto:adam.tunchay@me.com"
+          ><i class="fa-solid fa-envelope fa-2xl"></i
+        ></a>
+      </div>
+      <h3>Adam Tunchay 2022&copy;</h3>
+    </footer>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+
+      hamburger.addEventListener("click", mobileMenu);
+
+      function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      }
+
+      const navLink = document.querySelectorAll(".nav-link");
+
+      navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+      function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+      }
+    </script>
+  </body>
+</html>

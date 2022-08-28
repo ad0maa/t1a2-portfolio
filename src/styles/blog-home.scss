@@ -1,0 +1,84 @@
+// Import 
+@import "variables.scss";
+
+// Main Section
+.wrapper {
+    max-width: 1080px;
+    width: 100%;
+    // padding: 5%;
+    display: flex;
+    // flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+
+// Article Styling 
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // flex-wrap: wrap;
+    margin: 1rem;
+    padding: 1.5rem;
+    color: $primary-dark;
+    background-color: $primary-light;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px black;
+    // width: 100%;
+}
+
+article h2, article h3, article p {
+    align-self: flex-start;
+}
+
+.art-heading{
+    flex: 100%;
+}
+
+
+article img {
+    // height: 250px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+// Typography 
+h1 {
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-top: 1rem;
+}
+
+article p {
+    font-family: 'Quicksand', sans-serif;
+    padding: 1em 0;
+}
+
+// Media Queries 
+
+@media screen and (min-width: 768px){
+    .wrapper {
+        margin: auto;
+    }
+    
+    #blog-1 img {
+        width: 500px;
+    }
+
+    #blog-1 {
+        flex: 100%;
+    }
+
+    #blog-2, #blog-3, #blog-4, #blog-5{
+        flex: 45%;
+    }
+}
